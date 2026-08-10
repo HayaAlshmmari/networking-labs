@@ -10,6 +10,7 @@ Cisco Packet Tracer networking lab demonstrating VLAN configuration, trunking, a
 - 4 PCs
 - VLAN 10
 - VLAN 20
+- ![Network Topology](network-topology.png)
 
 ## IP Addressing
 
