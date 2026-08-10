@@ -5,9 +5,7 @@
 Cisco Packet Tracer networking lab demonstrating VLAN configuration, trunking, and Inter-VLAN Routing using Router-on-a-Stick.
 
 ## Network Topology
-
 [Network Topology](network-topology.png)
-
 * 1 Router
 * 2 Switches
 * 4 PCs
