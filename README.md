@@ -6,7 +6,7 @@ Cisco Packet Tracer networking lab demonstrating VLAN configuration, trunking, a
 
 ## Network Topology
 
-![Network Topology](network-topology.png)
+[Network Topology](network-topology.png)
 
 * 1 Router
 * 2 Switches
