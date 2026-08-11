@@ -1,0 +1,70 @@
+DHCP & DNS Network Lab
+Cisco Packet Tracer
+
+====================
+ROUTER CONFIGURATION
+====================
+
+enable
+configure terminal
+
+ip dhcp excluded-address 192.168.30.1 192.168.30.10
+
+ip dhcp pool LAN
+network 192.168.30.0 255.255.255.0
+default-router 192.168.30.1
+dns-server 192.168.30.2
+exit
+
+interface gigabitEthernet 0/0
+ip address 192.168.30.1 255.255.255.0
+no shutdown
+exit
+
+
+====================
+SWITCH CONFIGURATION
+====================
+
+enable
+configure terminal
+
+interface gigabitEthernet 0/1
+no shutdown
+exit
+
+
+====================
+DNS SERVER
+====================
+
+DNS Service: ON
+
+Domain Name:
+networklab.local
+
+IP Address:
+192.168.30.2
+
+
+====================
+TESTING
+====================
+
+ipconfig
+
+ping 192.168.30.1
+
+ping 192.168.30.2
+
+ping networklab.local
+
+
+====================
+FINAL RESULTS
+====================
+
+DHCP: Successful
+DNS Resolution: Successful
+Gateway Connectivity: Successful
+Packet Loss: 0%
