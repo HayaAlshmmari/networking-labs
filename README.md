@@ -1,26 +1,34 @@
 # DHCP and DNS Network Lab
 
-Cisco Packet Tracer network demonstrating DHCP configuration DNS resolution and basic network connectivity.
+Cisco Packet Tracer project demonstrating DHCP configuration DNS resolution IPv4 addressing and network connectivity.
 
-## Network Setup
+## Project Overview
 
-The network consists of one router one switch four PCs and one server.
+A small network was designed and configured using Cisco Packet Tracer.
 
-The router provides DHCP services and the server provides DNS services.
+The router provides DHCP services and acts as the default gateway while the server provides DNS services for the network.
+
+## Network Topology
+
+![Network Topology](DHCP-DNS-network-topology.png)
+
+The network includes:
+
+Router
+Switch
+4 PCs
+DNS Server
 
 ## IP Addressing
 
-Router Gateway: `192.168.30.1`
-
-DNS Server: `192.168.30.2`
-
-PC0: `192.168.30.11`
-
-PC1: `192.168.30.12`
-
-PC2: `192.168.30.13`
-
-PC3: `192.168.30.14`
+| Device | IP Address      | Role                     |
+| ------ | --------------- | ------------------------ |
+| Router | `192.168.30.1`  | Default Gateway and DHCP |
+| Server | `192.168.30.2`  | DNS Server               |
+| PC0    | `192.168.30.11` | DHCP Client              |
+| PC1    | `192.168.30.12` | DHCP Client              |
+| PC2    | `192.168.30.13` | DHCP Client              |
+| PC3    | `192.168.30.14` | DHCP Client              |
 
 Subnet Mask: `255.255.255.0`
 
@@ -28,38 +36,49 @@ Subnet Mask: `255.255.255.0`
 
 DHCP was configured on the router to automatically assign IPv4 addresses to the PCs.
 
-The DNS server was configured with the domain `networklab.local`.
+The DNS server was configured with the domain:
 
-The router interface was configured as the default gateway for the network.
+`networklab.local`
+
+The router interface was configured as the default gateway:
+
+`192.168.30.1`
 
 ## Testing
-
-DHCP configuration was verified using `ipconfig`.
-
-Gateway connectivity was tested using `ping 192.168.30.1`.
-
-DNS resolution was tested using `ping networklab.local`.
-
-The final connectivity tests achieved 0% packet loss.
-
-## Screenshots
-## Screenshots
-
-### Network Topology
-
-![Network Topology](DHCP-DNS-network-topology.png)
 
 ### DHCP Configuration
 
 ![DHCP Configuration](DHCP-ipconfig.png)
 
-### DNS Test
+DHCP was verified using `ipconfig`.
+
+PC1 successfully received:
+
+`192.168.30.12`
+
+### Gateway Connectivity
+
+![Gateway Test](Gateway-ping.png)
+
+The connection between PC1 and the router was tested using:
+
+`ping 192.168.30.1`
+
+Result: **0% packet loss**
+
+### DNS Resolution
 
 ![DNS Test](DNS-ping.png)
 
-### Gateway Test
+DNS resolution was tested using:
 
-![Gateway Test](Gateway-ping.png)
+`ping networklab.local`
+
+The domain successfully resolved to:
+
+`192.168.30.2`
+
+Result: **0% packet loss**
 
 ## Project Files
 
