@@ -1,46 +1,76 @@
-# Networking Labs
+# DHCP and DNS Network Lab
 
-Welcome to my networking projects repository.
+Cisco Packet Tracer network demonstrating DHCP configuration DNS resolution and basic network connectivity.
 
-This repository contains hands-on networking labs and projects built using Cisco Packet Tracer.
+## Network Setup
 
-## Projects
+The network consists of one router one switch four PCs and one server.
 
-### Cisco VLAN and Inter-VLAN Routing Network
+The router provides DHCP services and the server provides DNS services.
 
-A practical Cisco Packet Tracer project covering VLAN configuration, 802.1Q trunking, and Inter-VLAN Routing using Router-on-a-Stick.
+## IP Addressing
 
-The project includes:
+Router Gateway: `192.168.30.1`
 
-* VLAN 10 and VLAN 20
-* Access and trunk ports
-* IPv4 addressing
-* Inter-VLAN Routing
-* Network troubleshooting
-* Connectivity testing
+DNS Server: `192.168.30.2`
 
-Final connectivity tests achieved 0% packet loss.
+PC0: `192.168.30.11`
 
-[View Project](./VLAN-InterVLAN-Lab)
+PC1: `192.168.30.12`
 
-## Tools and Technologies
+PC2: `192.168.30.13`
+
+PC3: `192.168.30.14`
+
+Subnet Mask: `255.255.255.0`
+
+## Configuration
+
+DHCP was configured on the router to automatically assign IPv4 addresses to the PCs.
+
+The DNS server was configured with the domain `networklab.local`.
+
+The router interface was configured as the default gateway for the network.
+
+## Testing
+
+DHCP configuration was verified using `ipconfig`.
+
+Gateway connectivity was tested using `ping 192.168.30.1`.
+
+DNS resolution was tested using `ping networklab.local`.
+
+The final connectivity tests achieved 0% packet loss.
+
+## Screenshots
+
+Network Topology
+
+`DHCP-DNS-network-topology.png`
+
+DHCP Configuration
+
+`DHCP-ipconfig.png`
+
+DNS Test
+
+`DNS-ping.png`
+
+Gateway Test
+
+`Gateway-ping.png`
+
+## Project Files
+
+`DHCP-DNS-Network-Lab.pkt`
+
+`commands.txt`
+
+## Skills
 
 Cisco Packet Tracer
-
-VLANs
-
-802.1Q Trunking
-
-Inter-VLAN Routing
-
-Router-on-a-Stick
-
+DHCP
+DNS
 IPv4
-
 Network Troubleshooting
-
-## About
-
-This repository documents my hands-on practice and projects in computer networking.
-
-More networking projects will be added as I continue developing my skills.
+Basic Network Configuration
