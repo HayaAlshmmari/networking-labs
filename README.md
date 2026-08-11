@@ -1,49 +1,46 @@
-# VLAN & Inter-VLAN Routing Lab
+# Networking Labs
 
-## Overview
+Welcome to my networking projects repository.
 
-Cisco Packet Tracer networking lab demonstrating VLAN configuration, trunking, and Inter-VLAN Routing using Router-on-a-Stick.
+This repository contains hands-on networking labs and projects built using Cisco Packet Tracer.
 
-## Network Topology
-![Network Topology](VLAN-InterVLAN-Lab/network-topology.png)
-* 1 Router
-* 2 Switches
-* 4 PCs
-* VLAN 10
-* VLAN 20
+## Projects
 
-## IP Addressing
+### Cisco VLAN and Inter-VLAN Routing Network
 
-### VLAN 10
+A practical Cisco Packet Tracer project covering VLAN configuration, 802.1Q trunking, and Inter-VLAN Routing using Router-on-a-Stick.
 
-* PC0: `192.168.10.10`
-* PC2: `192.168.10.11`
-* Gateway: `192.168.10.1`
+The project includes:
 
-### VLAN 20
-
-* PC1: `192.168.20.10`
-* PC3: `192.168.20.11`
-* Gateway: `192.168.20.1`
-
-## Technologies
-
-* Cisco Packet Tracer
-* VLAN
-* Trunking (802.1Q)
-* Router-on-a-Stick
-* IPv4
+* VLAN 10 and VLAN 20
+* Access and trunk ports
+* IPv4 addressing
 * Inter-VLAN Routing
-* Network Troubleshooting
+* Network troubleshooting
+* Connectivity testing
 
-## Testing
+Final connectivity tests achieved 0% packet loss.
 
-Connectivity was tested using ping between devices in different VLANs.
+[View Project](./VLAN-InterVLAN-Lab)
 
-Final connectivity tests achieved **0% packet loss**, confirming successful Inter-VLAN communication.
+## Tools and Technologies
 
-## Project File
+Cisco Packet Tracer
 
-The Cisco Packet Tracer project file is included in this repository:
+VLANs
 
-`VLAN GITHUB HAYA.pkt`
+802.1Q Trunking
+
+Inter-VLAN Routing
+
+Router-on-a-Stick
+
+IPv4
+
+Network Troubleshooting
+
+## About
+
+This repository documents my hands-on practice and projects in computer networking.
+
+More networking projects will be added as I continue developing my skills.
