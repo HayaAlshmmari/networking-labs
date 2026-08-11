@@ -43,22 +43,23 @@ DNS resolution was tested using `ping networklab.local`.
 The final connectivity tests achieved 0% packet loss.
 
 ## Screenshots
+## Screenshots
 
-Network Topology
+### Network Topology
 
-`DHCP-DNS-network-topology.png`
+![Network Topology](DHCP-DNS-network-topology.png)
 
-DHCP Configuration
+### DHCP Configuration
 
-`DHCP-ipconfig.png`
+![DHCP Configuration](DHCP-ipconfig.png)
 
-DNS Test
+### DNS Test
 
-`DNS-ping.png`
+![DNS Test](DNS-ping.png)
 
-Gateway Test
+### Gateway Test
 
-`Gateway-ping.png`
+![Gateway Test](Gateway-ping.png)
 
 ## Project Files
 
